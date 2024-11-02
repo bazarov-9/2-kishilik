@@ -1,0 +1,314 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Image</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body class="bg-black">
+  <nav class="max-sm:bg-cover bg-[url('images/6-1.png')] h-full bg-cover">
+    <div class="flex items-center justify-between px-6 lg:px-44 container mx-auto mt-5">
+      <!-- Logo -->
+      <a href="#" class="hover:text-amber-400 text-white text-xl">First Flight <br> School</a>
+
+      <!-- Burger Button for Mobile -->
+      <div class="lg:hidden">
+        <button id="burger" class="hover:text-amber-400 text-white text-2xl focus:outline-none">
+          ☰
+        </button>
+      </div>
+
+      <!-- Menu for Desktop -->
+      <ul id="menu" class="hidden lg:flex space-x-10 text-white gap-20">
+        <li><a href="#home" class="hover:text-amber-400">О себе</a></li>
+        <li><a href="#about" class="hover:text-amber-400">Для кого</a></li>
+        <li><a href="#services" class="hover:text-amber-400">Преподователь</a></li>
+        <li><a href="#contact" class="hover:text-amber-400">Программа</a></li>
+      </ul>
+
+      <!-- Button for Desktop -->
+      <a href="#home" class="hidden lg:block">
+        <button class="py-2 px-6 rounded-lg border-2 border-[#CFF649] hover:bg-[#CFF649]">
+          <p class="text-white hover:text-black">Записаться</p>
+        </button>
+      </a>
+    </div>
+
+    <!-- Responsive Mobile Menu -->
+    <ul id="mobileMenu" class="hidden flex-col lg:hidden mt-4 px-6 bg-black rounded text-white space-y-2">
+      <li><a href="#home" class="block px-4 py-2 hover:bg-amber-500">О себе</a></li>
+      <li><a href="#about" class="block px-4 py-2 hover:bg-amber-500">Для кого</a></li>
+      <li><a href="#services" class="block px-4 py-2 hover:bg-amber-500">Преподователь</a></li>
+      <li><a href="#contact" class="block px-4 py-2 hover:bg-amber-500">Программа</a></li>
+    </ul>
+
+    <!-- Main Content with Image and Text Side by Side -->
+    <main class="container mx-auto relative top-28 px-5 lg:px-20 lg:flex lg:items-center lg:gap-10 text-white">
+      <!-- Text Content Section -->
+      <div class="lg:w-1/2 text-center lg:text-left">
+        <a class="inline-block border-2 border-white hover:border-amber-400 px-6 lg:px-10 py-2 rounded-full mb-5 hover:text-amber-400" href="#">
+          Профессия
+        </a>
+        <h1 class="font-bold text-3xl lg:text-6xl uppercase">Stylized <br> Environment Art</h1>
+        <p class="mt-5 lg:w-2/3 mx-auto lg:mx-0">Научись создавать окружение для игровой компьютерной графики с нуля до конечного результата в виде готовой игровой локации для вашего портфолио</p>
+        
+        <a class="inline-block mt-10 text-black border-2 bg-[#CFF649] border-[#CFF649] cursor-pointer py-2 px-10 rounded-lg hover:bg-transparent hover:text-[#CFF649]" href="#">
+          Записаться
+        </a>
+      </div>
+      
+      <!-- Image Section -->
+      <div class="w-full lg:w-[488px] h-auto mt-10 lg:mt-0 flex justify-center lg:justify-end">
+        <img src="images/6-1.png" alt="Sample" class="max-w-xs lg:max-w-full h-auto rounded-lg shadow-lg">
+      </div>
+
+    </main>
+<!-- Tools Section -->
+<section class="py-40 ml-40">
+  <div class="container mx-auto px-4 grid grid-cols-2 lg:grid-cols-6 gap-10 text-center">
+    <!-- Tool Card 1 -->
+    <div class="flex items-center justify-center bg-[#1a1a1a] p-6 rounded-lg shadow-lg">
+      <img src="images/6-1.png" alt="Blender" class="h-6 w-full">
+    </div>
+    <!-- Tool Card 2 -->
+    <div class="flex items-center justify-center bg-[#1a1a1a] p-6 rounded-lg shadow-lg">
+      <img src="svg/zbrush.svg" alt="Blender" class="h-6 w-full">
+    </div>
+    <!-- Tool Card 3 -->
+    <div class="flex items-center justify-center bg-[#1a1a1a] p-6 rounded-lg shadow-lg">
+      <img src="svg/zbrush.svg" alt="Blender" class="h-6 w-full">
+    </div>
+    <!-- Tool Card 4 -->
+    <div class="flex items-center justify-center bg-[#1a1a1a] p-6 rounded-lg shadow-lg">
+      <img src="svg/zbrush.svg" alt="Blender" class="h-6 w-full">
+    </div>
+    <!-- Tool Card 5 -->
+    <div class="flex items-center justify-center bg-[#1a1a1a] p-6 rounded-lg shadow-lg">
+      <img src="svg/zbrush.svg" alt="Blender" class="h-6 w-full">
+    </div>
+  </div>
+</section>
+
+
+
+<section class="container m-auto px-6 py-12 md:flex md:justify-center md:space-x-8">
+  <!-- Media Section -->
+  <div class="md:w-1/2 max-w-md bg-gray-800 rounded-lg overflow-hidden mb-6 md:mb-0">
+    <img src="images/Object.png" alt="Course Media" class="w-full">
+    <div class="p-4 text-center">
+      <button class="bg-blue-600 rounded-full p-2">
+        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Course Description -->
+  <div class="md:w-1/2 max-w-md space-y-4">
+    <h2 class="text-2xl text-white font-bold">О курсе</h2>
+    <p class="text-gray-300">Получите уникальный опыт работы с самыми мощными инструментами для создания трендовых персонажей, а также научитесь основам моделирования, текстурирования и рендеринга.</p>
+    
+    <!-- Course Stats -->
+    <div class="flex justify-between text-center pt-4">
+      <div>
+        <p class="text-3xl font-bold">96</p>
+        <p class="text-gray-400">уроков по 30 минут</p>
+      </div>
+      <div>
+        <p class="text-3xl font-bold">6</p>
+        <p class="text-gray-400">месяцев наставничества</p>
+      </div>
+      <div>
+        <p class="text-3xl font-bold">2</p>
+        <p class="text-gray-400">работы в портфолио</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="px-6 py-12">
+  <h2 class="text-2xl font-bold mb-8">Для кого</h2>
+  <div class="grid gap-8 md:grid-cols-3">
+    <!-- Beginners Card -->
+    <div class="bg-[#CFF649] p-6 rounded-lg text-center">
+      <img src="images/Rectangle 1.png" alt="Beginners Icon" class="mx-auto mb-4">
+      <h3 class="text-lg font-bold">Новички</h3>
+      <p class="text-gray-300 mt-2">Для людей, которые хотят освоить 3D-дизайн с нуля, получив необходимые знания и навыки, востребованные программой ZBrush.</p>
+    </div>
+
+    <!-- Experienced Artists Card -->
+    <div class="bg-[#CFF649] p-6 rounded-lg text-center">
+      <img src="images/Rectangle 1 (1).png" alt="Experienced Icon" class="mx-auto mb-4">
+      <h3 class="text-lg font-bold">Опытные художники</h3>
+      <p class="text-gray-300 mt-2">Для художников, стремящихся улучшить свои навыки и научиться создавать высококачественные персонажи для индустрии.</p>
+    </div>
+
+    <!-- Hobbyists Card -->
+    <div class="bg-[#CFF649] p-6 rounded-lg text-center">
+      <img src="images/Rectangle 1 (1).png" alt="Hobby Icon" class="mx-auto mb-4">
+      <h3 class="text-lg font-bold">Хобби</h3>
+      <p class="text-gray-300 mt-2">Для людей, которые увлекаются творчеством и хотят погрузиться в мир 3D-дизайна на любительском уровне.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="px-6 py-12">
+  <h2 class="text-3xl font-bold mb-8">Программа курса</h2>
+  
+  <div class="space-y-6">
+    <!-- Module 1 -->
+    <div class="bg-[#CFF649] p-6 rounded-lg flex items-center space-x-6">
+      <img src="images/Rectangle 1 (1).png" alt="Module 1 Image" class="w-24 h-24 rounded-md">
+      <div class="flex-1">
+        <h3 class="text-xl font-bold">МОДУЛЬ 1: Основы в Zbrush</h3>
+        <p class="text-gray-300 mt-2">Ты изучишь программы, ты познакомишься с их интерфейсом и логикой процесса. Также получишь реальные навыки и начнешь практиковаться работать с референсами.</p>
+      </div>
+      <div class="text-right">
+        <p class="text-gray-400">10 уроков</p>
+      </div>
+    </div>
+
+    
+
+      <!-- Module 2 -->
+      <div class="bg-[#CFF649] p-6 rounded-lg flex items-center space-x-6">
+        <img src="images/Rectangle 1 (1).png" alt="Module 2 Image" class="w-24 h-24 rounded-md">
+        <div class="flex-1">
+          <h3 class="text-xl font-bold">МОДУЛЬ 2: Скульптинг</h3>
+          <p class="text-gray-300 mt-2">Ты освоишь базовые принципы тела и лица, что поможет вам в создании персонажей.</p>
+        </div>
+        <div class="text-right">
+          <p class="text-gray-400">10 уроков</p>
+        </div>
+      </div>
+
+      <!-- Module 3 -->
+      <div class="bg-[#CFF649] p-6 rounded-lg flex items-center space-x-6">
+        <img src="images/Rectangle 1 (1).png" alt="Module 3 Image" class="w-24 h-24 rounded-md">
+        <div class="flex-1">
+          <h3 class="text-xl font-bold">МОДУЛЬ 3: Моделирование оружия</h3>
+          <p class="text-gray-300 mt-2">Ты изучишь основы твердотельного моделирования и научишься работать с инструментами Blender для создания моделей оружия.</p>
+        </div>
+        <div class="text-right">
+          <p class="text-gray-400">10 уроков</p>
+        </div>
+      </div>
+
+      <!-- Add more modules as needed following the same structure -->
+
+      <!-- Module 4 -->
+      <div class="bg-[#CFF649] p-6 rounded-lg flex items-center space-x-6">
+        <img src="images/Rectangle 1 (1).png" alt="Module 4 Image" class="w-24 h-24 rounded-md">
+        <div class="flex-1">
+          <h3 class="text-xl font-bold">МОДУЛЬ 4: Ретопология</h3>
+          <p class="text-gray-300 mt-2">Научишься оптимизировать и подготавливать модели для дальнейшей работы.</p>
+        </div>
+        <div class="text-right">
+          <p class="text-gray-400">10 уроков</p>
+        </div>
+      </div>
+
+      <!-- Repeat for other modules -->
+      
+    </div>
+  </section>
+  <section class="px-6 py-12">
+    <h2 class="text-3xl font-bold mb-8">Куратор курса</h2>
+    <div class="md:flex bg-gray-800 p-6 rounded-lg items-center space-y-6 md:space-y-0 md:space-x-8">
+      <!-- Curator Info -->
+      <div class="md:w-1/3 flex flex-col items-center text-center md:text-left md:items-start space-y-4">
+        <img src="images/o'yin.png" alt="Curator Image" class="w-24 h-24 rounded-full">
+        <div>
+          <h3 class="text-2xl font-bold">Виталий Волокитин</h3>
+          <p class="text-[#CFF649 ]">3D-Artist</p>
+        </div>
+        <p class="text-gray-300">Художник по персонажам</p>
+        <p class="text-gray-300">В игровой индустрии более 7 лет</p>
+        <p class="text-gray-300">Работал в таких компаниях, как Wargaming, Xing, My.Games</p>
+      </div>
+      
+      <!-- Curator Links -->
+      <div class="md:w-1/3 flex justify-center md:justify-start space-x-4">
+        <a href="#" class="text-{#CFF649} hover:underline">ARTSTATION</a>
+      </div>
+      
+      <!-- Curator Examples -->
+      <div class="md:w-1/3 grid grid-cols-3 gap-4">
+        <img src="images/o'yin.png" alt="Example 1" class="rounded-md">
+        <img src="images/o'yin.png" alt="Example 2" class="rounded-md">
+        <img src="images/o'yin.png" alt="Example 3" class="rounded-md">
+      </div>
+    </div>
+  </section>
+  <section class="container m-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-8">Процесс обучения</h2>
+    <div class="grid gap-8 md:grid-cols-3 lg:grid-cols-5">
+      <!-- Step 1 -->
+      <div class="bg-[#CFF649] p-6 rounded-lg text-center">
+        <h3 class="text-xl font-bold mb-2">Видео уроки</h3>
+        <p class="text-gray-300">Курс представляет собой систематические видеоуроки с выполнением заданий и обратной связью от наставника.</p>
+      </div>
+      <!-- Step 2 -->
+      <div class="bg-[#CFF649] p-6 rounded-lg text-center">
+        <h3 class="text-xl font-bold mb-2">Практические упражнения</h3>
+        <p class="text-gray-300">Каждый блок имеет свои практические задания для закрепления знаний и улучшения навыков.</p>
+      </div>
+      <!-- Step 3 -->
+      <div class="bg-[#CFF649] p-6 rounded-lg text-center">
+        <h3 class="text-xl font-bold mb-2">Проекты</h3>
+        <p class="text-gray-300">Каждый студент создаёт полноценные проекты для пополнения своего портфолио.</p>
+      </div>
+      <!-- Step 4 -->
+      <div class="bg-[#CFF649] p-6 rounded-lg text-center">
+        <h3 class="text-xl font-bold mb-2">Наставничество</h3>
+        <p class="text-gray-300">Весь процесс обучения сопровождается поддержкой наставника.</p>
+      </div>
+      <!-- Step 5 -->
+      <div class="bg-[#CFF649] p-6 rounded-lg text-center">
+        <h3 class="text-xl font-bold mb-2">Сертификат</h3>
+        <p class="text-gray-300">По завершении обучения студенты получают сертификат.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-6 py-12">
+    <div class="grid gap-8 md:grid-cols-2">
+      <!-- Subscription Option -->
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h3 class="text-2xl font-bold mb-4 text-[#CFF649]">Подписка PRO</h3>
+        <p class="text-gray-300 mb-4">Оформи подписку и плати частями на пути всего обучения</p>
+        <ul class="text-gray-400 space-y-2">
+          <li>Полный доступ к курсам</li>
+          <li>Чат со спикерами</li>
+          <li>Техподдержка от кураторов</li>
+          <li>Доступ к домашним заданиям</li>
+        </ul>
+        <p class="text-3xl font-bold mt-4">3,500 ₽/мес</p>
+        <button class="mt-4 px-4 py-2 bg-[#CFF649] rounded-lg">Оформить подписку</button>
+      </div>
+
+      <!-- Purchase Option -->
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h3 class="text-2xl font-bold mb-4">Покупка курса</h3>
+        <p class="text-gray-300 mb-4">Оплати курс сразу с выгодой 20%</p>
+        <ul class="text-gray-400 space-y-2">
+          <li>Доступ к курсам навсегда</li>
+          <li>Чат со спикерами</li>
+          <li>Техподдержка от кураторов</li>
+          <li>Минус 20% в подарок</li>
+          <li>Тогда не придется сдавать домашнее задание</li>
+        </ul>
+        <p class="text-3xl font-bold mt-4">20,000 ₽</p>
+        <button class="mt-4 px-4 py-2 bg-[#CFF649] rounded-lg">Купить курс</button>
+      </div>
+    </div>
+  </section>
+
+  </nav>
+
+</body>
+
+</html>
