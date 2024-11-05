@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "2-kishilik",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../projects/3-kishilik/images"
+		},
+		{
+			"name": "svg",
+			"path": "../projects/3-kishilik/svg"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "2-kishilik"
+	}
+}
